@@ -39,6 +39,6 @@ SELECT SUM(transactions.sales_amount) FROM transactions INNER JOIN date ON trans
 Show total revenue in year 2020, January Month,
 SELECT SUM(transactions.sales_amount) FROM transactions INNER JOIN date ON transactions.order_date=date.date where date.year=2020 and and date.month_name="January" and (transactions.currency="INR\r" or transactions.currency="USD\r");
 Show total revenue in year 2020 in Chennai
-//SELECT SUM(transactions.sales_amount) FROM transactions INNER JOIN date ON transactions.order_date=date.date where date.year=2020 and transactions.market_code="Mark001";
+SELECT SUM(transactions.sales_amount) FROM transactions INNER JOIN date ON transactions.order_date=date.date where date.year=2020 and transactions.market_code="Mark001";
 Output:
 <img width="1154" height="732" alt="image" src="https://github.com/user-attachments/assets/d5a342e9-9132-4025-8053-8c3ac44d1095" />
